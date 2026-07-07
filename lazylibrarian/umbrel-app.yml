@@ -3,15 +3,15 @@ id: lazylibrarian
 category: media
 name: LazyLibrarian
 version: "4529bef5-ls308"
-tagline: Follow authors and download books, audiobooks, magazines, and comics
+tagline: Manage and automate your digital reading library
 description: >-
-  LazyLibrarian is a digital reading manager for ebooks, audiobooks, magazines, and comics. It can follow authors, fetch book metadata, mark wanted titles, search configured providers, and send matching releases to supported download clients such as SABnzbd, NZBGet, Transmission, qBittorrent, Deluge, rTorrent, and blackhole/watch folders.
+  LazyLibrarian is a self-hosted reading collection manager for ebooks, audiobooks, magazines, and comics. It can follow authors, track wanted titles, fetch metadata, search configured providers, and send matching releases to supported download clients or blackhole/watch folders.
 
 
   SETUP INSTRUCTIONS
 
 
-  LazyLibrarian stores its app configuration in persistent Umbrel app data and has access to your shared Umbrel Downloads folder at `/downloads`.
+  LazyLibrarian stores its configuration in persistent Umbrel app data and can read and write Umbrel's shared Downloads folder at `/downloads`.
 
 
   Recommended first-run paths:
@@ -19,14 +19,16 @@ description: >-
 
   - Use `/downloads/books` as your ebook library or completed ebook folder.
 
-  - Use `/downloads/audiobooks` as your audiobook folder if you manage audiobooks with LazyLibrarian.
+  - Use `/downloads/audiobooks` as your audiobook folder if you manage audiobooks.
+
+  - Use `/downloads/magazines` or `/downloads/comics` if you manage those formats.
 
   - Configure your download client in LazyLibrarian's settings. Transmission, qBittorrent, and SABnzbd can be installed separately from the Umbrel App Store.
 
-  - Add your preferred providers/indexers in LazyLibrarian. Prowlarr can also be used as a Torznab/Newznab provider source.
+  - Add providers/indexers in LazyLibrarian. Prowlarr can be used by adding its Torznab/Newznab feeds as providers.
 
 
-  LazyLibrarian opens behind your Umbrel login by default. If you expose it outside Umbrel's protected app proxy, configure LazyLibrarian's own authentication in its interface settings.
+  LazyLibrarian opens behind Umbrel authentication by default. If you expose it outside Umbrel's protected app proxy, configure LazyLibrarian's own authentication in Interface settings.
 releaseNotes: ""
 
 developer: LazyLibrarian
