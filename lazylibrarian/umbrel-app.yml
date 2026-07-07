@@ -48,4 +48,4 @@ permissions:
   - STORAGE_DOWNLOADS
 
 submitter: nrempel
-submission: https://github.com/getumbrel/umbrel-apps/issues/1356
+submission: https://github.com/getumbrel/umbrel-apps/pull/<number>
